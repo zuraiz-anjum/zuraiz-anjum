@@ -20,6 +20,8 @@ Design long-horizon RL environments for frontier models across CPU and GPU ML en
 **Mercor** · Software Engineer
 Worked with global AI labs on model training and evaluation. Built the schemas, APIs and backend services behind production models, and measured models for accuracy, performance and reliability.
 
+<sub>Earlier: AI/ML at Project19 (LLM fine-tuning and agentic workflows). Also doing applied data science at 10Pearls.</sub>
+
 ### Built
 
 - [**ARES**](https://web-production-41acc.up.railway.app): 26 cooperating agents across 14 LangGraph workflows that turn a question into a cited research report. Retrieval over ChromaDB, provider failover, 123 automated tests.
