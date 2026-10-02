@@ -8,6 +8,14 @@ So I build the whole thing: the agents and retrieval in the middle, the backend 
 
 <br>
 
+**Think you can fool a grader?**
+
+I keep a hardened grader for a deliberately tiny task. Get it to award a 1 without solving the task and I'll list your exploit and fix the grader. [Rules](https://github.com/zuraiz-anjum/grader-redteam/blob/main/challenge/CHALLENGE.md) · [submit an exploit](https://github.com/zuraiz-anjum/grader-redteam/issues/new?template=exploit.yml)
+
+[![challenge](https://github.com/zuraiz-anjum/grader-redteam/actions/workflows/challenge.yml/badge.svg)](https://github.com/zuraiz-anjum/grader-redteam/actions/workflows/challenge.yml)
+
+<br>
+
 **Things I've built**
 
 | | |
