@@ -28,7 +28,7 @@ So I build the whole thing: the agents and retrieval in the middle, the backend 
 
 Shipping RL environments at Tensium · writing up how models cheat graders, and how to stop them.
 
-**Usually in my hands**
+**What I ship with**
 
 Python, TypeScript, PyTorch, LangGraph, FastAPI, Django, Next.js, PostgreSQL, Docker.
 
