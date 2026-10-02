@@ -22,7 +22,6 @@ So I build the whole thing: the agents and retrieval in the middle, the backend 
 
 | project | what was wrong | status |
 |:--|:--|:--|
-| [rLLM #791](https://github.com/rllm-org/rllm/pull/791) | Dockerfile `RUN` lines continued with a backslash were glued together on replay, so multi-line commands silently changed meaning. | in review |
 | [rLLM #792](https://github.com/rllm-org/rllm/pull/792) | Prebuilt task images re-ran their Dockerfile steps on top of an image that already had them baked in. | in review |
 
 **Now**
