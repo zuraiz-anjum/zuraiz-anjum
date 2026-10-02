@@ -32,6 +32,7 @@ I keep a hardened grader for a deliberately tiny task. Get it to award a 1 witho
 | project | what was wrong | status |
 |:--|:--|:--|
 | [LiteLLM #44201](https://github.com/BerriAI/litellm/pull/44201) | Updating a Lens finding with an id that doesn't exist returned 200 and changed nothing, so a typo looked like a successful update. | in review |
+| [LiteLLM #44230](https://github.com/BerriAI/litellm/pull/44230) | Streams where the provider sent no usage were logged at 0 tokens and $0, so spend tracking undercounted that traffic. A regression from [#42323](https://github.com/BerriAI/litellm/pull/42323). | in review |
 | [Strata #454](https://github.com/Niko1221/Strata/pull/454) | The local OpenAI and Anthropic API silently ignored `stop` and `stop_sequences`, so clients got text past their stop string. | in review |
 | [Strata #455](https://github.com/Niko1221/Strata/pull/455) | Setup offered AMD users a model that only runs on NVIDIA, and started its 111 GB download. | in review |
 | [rLLM #792](https://github.com/rllm-org/rllm/pull/792) | Prebuilt task images re-ran their Dockerfile steps on top of an image that already had them baked in. | in review |
