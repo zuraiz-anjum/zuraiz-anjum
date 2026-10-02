@@ -1,6 +1,6 @@
 ## Zuraiz Anjum
 
-I build the environments frontier AI models are trained and judged in. If a model can fake its way through one of mine, I haven't finished it yet.
+AI engineer who ships the whole thing: the model, the agents around it, the backend it runs on and the interface people actually use. Lately I also build the environments frontier models are trained and judged in.
 
 [portfolio](https://zuraiz-portfolio.vercel.app) · [linkedin](https://www.linkedin.com/in/zuraiz-anjum-9aa191372) · zuraizwork@gmail.com
 
@@ -8,9 +8,15 @@ I build the environments frontier AI models are trained and judged in. If a mode
 
 ### What I do
 
-I take a hard engineering problem, wrap it in real data and a live system, and turn it into something a model has to actually solve. Then I spend most of my time trying to break it: hunting the shortcut, the leaked answer, the grader that can be talked into a pass. What survives is a measurement you can trust.
+**AI engineering.** Multi-agent systems, RAG pipelines and LLM apps that hold up outside a demo: ARES runs 26 cooperating agents end to end, from a question to a cited report.
 
-That same instinct carries into everything I ship. I write the failure case before the feature, I treat a passing test with suspicion until I've seen it fail, and I care more about whether a system is right than whether it runs.
+**Full stack.** Django and FastAPI backends, React and Next.js frontends, deployed with CI. I like owning a product from the schema to the last pixel.
+
+**Data science.** Forecasting and ML on real, messy data, like a three-day air quality forecast for Lahore running on a serverless pipeline.
+
+**RL evaluation.** Long-horizon environments for frontier models, with graders built so the only way to pass is to actually solve the problem.
+
+Across all of it I care more about whether a system is right than whether it runs. I write the failure case before the feature.
 
 ### Work
 
