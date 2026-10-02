@@ -12,7 +12,7 @@ So I build the whole thing: the agents and retrieval in the middle, the backend 
 
 | | |
 |:--|:--|
-| [**ARES**](https://web-production-41acc.up.railway.app) | 26 cooperating agents across 14 LangGraph workflows that turn a question into a cited research report. RAG over ChromaDB, provider failover, 123 automated tests. |
+| **ARES** | 26 cooperating agents across 14 LangGraph workflows that turn a question into a cited research report. RAG over ChromaDB, provider failover, 123 automated tests. |
 | [**RouteLog**](https://github.com/zuraiz-anjum/RouteLog-HOS-Trip-Planner) | Hours-of-service trip planner and ELD log generator for truck drivers. Django and React, deployed with CI. [live](https://full-stack-assesment-smoky.vercel.app) |
 | [**fuel-route-planner-api**](https://github.com/zuraiz-anjum/fuel-route-planner-api) | Cost-optimal fuel stops for any US road trip from a single routing call. |
 | [**pearls-aqi**](https://github.com/zuraiz-anjum/pearls-aqi) | Three-day air quality forecast for Lahore on a fully serverless ML pipeline. |
