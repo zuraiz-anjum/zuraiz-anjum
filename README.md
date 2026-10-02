@@ -31,6 +31,8 @@ I keep a hardened grader for a deliberately tiny task. Get it to award a 1 witho
 
 | project | what was wrong | status |
 |:--|:--|:--|
+| [Strata #454](https://github.com/Niko1221/Strata/pull/454) | The local OpenAI and Anthropic API silently ignored `stop` and `stop_sequences`, so clients got text past their stop string. | in review |
+| [Strata #455](https://github.com/Niko1221/Strata/pull/455) | Setup offered AMD users a model that only runs on NVIDIA, and started its 111 GB download. | in review |
 | [rLLM #792](https://github.com/rllm-org/rllm/pull/792) | Prebuilt task images re-ran their Dockerfile steps on top of an image that already had them baked in. | in review |
 
 **Now**
