@@ -32,12 +32,12 @@ I keep a hardened grader for a deliberately tiny task. Get it to award a 1 witho
 | project | what was wrong | status |
 |:--|:--|:--|
 | [LiteLLM #44201](https://github.com/BerriAI/litellm/pull/44201) | Updating a Lens finding with an id that doesn't exist returned 200 and changed nothing, so a typo looked like a successful update. | in review |
-| [LiteLLM #44230](https://github.com/BerriAI/litellm/pull/44230) | Streams where the provider sent no usage were logged at 0 tokens and $0, so spend tracking undercounted that traffic. A regression from [#42323](https://github.com/BerriAI/litellm/pull/42323). | in review |
+| [LiteLLM #44230](https://github.com/BerriAI/litellm/pull/44230) | Streams where the provider sent no usage were logged at 0 tokens and $0, so spend tracking undercounted that traffic. A regression from [#42323](https://github.com/BerriAI/litellm/pull/42323). | merged |
 | [rLLM #792](https://github.com/rllm-org/rllm/pull/792) | Prebuilt task images re-ran their Dockerfile steps on top of an image that already had them baked in. | in review |
 
 **Shipped**
 
-Four long-horizon environments merged into Tensium's task workspace since October 2, with more in review.
+Fifteen long-horizon environments merged into Tensium's task workspace since October 2.
 
 **Now**
 
