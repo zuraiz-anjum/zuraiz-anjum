@@ -11,7 +11,7 @@ A grader that a model can talk into a 1. A forecast that looks fine until the da
 
 **Environments**
 
-Through June 2026 I built long-horizon environments for an AI training-data company. Each one gives an agent a real public dataset (energy registers, weather stations, mine safety filings, bike docks, exoplanet catalogs), a broken or unfinished pipeline, and a job that takes a hundred or so tool calls to finish properly. A verifier in a Docker sandbox scores the result against data the agent never sees.
+Through July 2026 I built long-horizon environments for an AI training-data company. Each one gives an agent a real public dataset (energy registers, weather stations, mine safety filings, bike docks, exoplanet catalogs), a broken or unfinished pipeline, and a job that takes a hundred or so tool calls to finish properly. A verifier in a Docker sandbox scores the result against data the agent never sees.
 
 The hard part is the grader. I attack my own verifiers before anyone else does: stale or planted reward files, processes left running after the episode, outputs that only look right on the visible split, answers that can be recalled instead of worked out. Then I read the agent trajectories to see why attempts passed or failed, and change the task until a pass means what it should. The client's code stays private. The method is public in grader-redteam below.
 
