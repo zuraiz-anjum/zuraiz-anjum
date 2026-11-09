@@ -34,18 +34,44 @@ I keep a hardened grader for a deliberately tiny task. Get it to award a 1 witho
 | [**pearls-aqi**](https://github.com/zuraiz-anjum/pearls-aqi) | Three-day air quality forecast for Lahore that retrains and republishes itself on GitHub Actions. Next-day RMSE 13.1, 42% better than persistence on embargoed out-of-fold data. [Live page](https://zuraiz-anjum.github.io/pearls-aqi/). |
 | [**pk-wiki-integrity-lakehouse**](https://github.com/zuraiz-anjum/pk-wiki-integrity-lakehouse) | Spark and Delta pipeline tracking edits and reverts on the Urdu, Punjabi, Sindhi and Pashto Wikipedias. Idempotent MERGE writes, schema drift quarantine, audit tables. |
 
-**Fixes upstream**
+**Bugs I caught upstream**
 
-| project | what was wrong | status |
-|:--|:--|:--|
-| [LiteLLM #44230](https://github.com/BerriAI/litellm/pull/44230) | Streams where the provider sent no usage were logged at 0 tokens and $0, so spend tracking undercounted that traffic. A regression from [#42323](https://github.com/BerriAI/litellm/pull/42323). | merged |
-| [rLLM #792](https://github.com/rllm-org/rllm/pull/792) | Prebuilt task images re-ran their Dockerfile steps on top of an image that already had them baked in. | open |
-| Gymnasium | `generate_random_map` hangs for a 1x1 map or `p=0` instead of raising an error. | fix tested, not yet filed |
-| TorchRL | The Countdown reward parser accepts `**`, `//` and decimals, and a nested power can hang it. | fix tested, not yet filed |
-| MLflow | The RAGAS tool-call metrics drop tool calls that take no arguments, so a correct agent can score 0.0. | fix tested, not yet filed |
-| Opik | `evaluate_on_dict_items` raises a TypeError when an item has an `id`. | fix tested, not yet filed |
-| inspect_ai | `multiple_choice(template=...)` always errors when given a file path. | fix tested, not yet filed |
-| SGLang | The MiniMax-M3 streaming tool parser breaks on nested closing tags. | fix tested, not yet filed |
+Most of these are graders or eval harnesses scoring something wrong, quietly. Merged so far:
+
+| fix | what was wrong |
+|:--|:--|
+| [OpenEnv #1572](https://github.com/openenv/OpenEnv/pull/1572) | The Julia environment's safety filter matched `rm(` inside `norm(` and `transform(`, so ordinary numeric code got penalized as dangerous. It now matches whole calls only. |
+| [OpenEnv #1570](https://github.com/openenv/OpenEnv/pull/1570) | A terminal-bench `reward.txt` holding `nan` or `inf` finished the episode as a success with no reward. Now it counts as no verdict, like an empty file. |
+| [OpenEnv #1569](https://github.com/openenv/OpenEnv/pull/1569) | FinQA's percentage fallback never stripped labels like `2023:`, so a correct labelled answer scored 0. |
+| [LiteLLM #44230](https://github.com/BerriAI/litellm/pull/44230) | Streams where the provider sent no usage were logged at 0 tokens and $0, so spend tracking undercounted that traffic. A regression from [#42323](https://github.com/BerriAI/litellm/pull/42323). |
+
+In review, 31 PRs across 23 projects:
+
+| project | PRs |
+|:--|:--|
+| NVIDIA NeMo Gym | [#5733](https://github.com/NVIDIA-NeMo/Gym/pull/5733), [#5760](https://github.com/NVIDIA-NeMo/Gym/pull/5760), [#5761](https://github.com/NVIDIA-NeMo/Gym/pull/5761), [#5802](https://github.com/NVIDIA-NeMo/Gym/pull/5802), [#5803](https://github.com/NVIDIA-NeMo/Gym/pull/5803) |
+| Letta evals | [#357](https://github.com/letta-ai/letta-evals/pull/357), [#358](https://github.com/letta-ai/letta-evals/pull/358) |
+| OSWorld | [#686](https://github.com/xlang-ai/OSWorld/pull/686), [#687](https://github.com/xlang-ai/OSWorld/pull/687) |
+| Prime Intellect verifiers | [#3092](https://github.com/PrimeIntellect-ai/verifiers/pull/3092), [#3093](https://github.com/PrimeIntellect-ai/verifiers/pull/3093) |
+| rLLM | [#792](https://github.com/rllm-org/rllm/pull/792), [#950](https://github.com/rllm-org/rllm/pull/950) |
+| AllenAI open-instruct | [#2212](https://github.com/allenai/open-instruct/pull/2212) |
+| AutoResearchExam | [#24](https://github.com/bespokelabsai/AutoResearchExam/pull/24) |
+| Browser Use rl-env-use | [#9](https://github.com/browser-use/rl-env-use/pull/9) |
+| CRMArena | [#32](https://github.com/SalesforceAIResearch/CRMArena/pull/32) |
+| Gymnasium | [#1837](https://github.com/Farama-Foundation/Gymnasium/pull/1837) |
+| Harbor | [#4160](https://github.com/harbor-framework/harbor/pull/4160) |
+| ITA-Bench | [#2](https://github.com/SapienzaNLP/ita-bench/pull/2) |
+| judgeval | [#837](https://github.com/JudgmentLabs/judgeval/pull/837) |
+| karotte | [#141](https://github.com/preferencemodel/karotte/pull/141) |
+| LiteLLM | [#50442](https://github.com/BerriAI/litellm/pull/50442) |
+| LiveKit Agents | [#8420](https://github.com/livekit/agents/pull/8420) |
+| MemoryBench | [#102](https://github.com/supermemoryai/memorybench/pull/102) |
+| MLflow | [#27541](https://github.com/mlflow/mlflow/pull/27541) |
+| OpenEnv | [#1580](https://github.com/openenv/OpenEnv/pull/1580) |
+| Opik | [#9503](https://github.com/comet-ml/opik/pull/9503) |
+| speedrun_bench | [#11](https://github.com/patronus-ai/speedrun_bench/pull/11) |
+| Tinker Cookbook | [#994](https://github.com/thinking-machines-lab/tinker-cookbook/pull/994) |
+| YC-Bench | [#48](https://github.com/collinear-ai/yc-bench/pull/48) |
 
 **What I ship with**
 
