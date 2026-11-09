@@ -45,33 +45,130 @@ Most of these are graders or eval harnesses scoring something wrong, quietly. Me
 | [OpenEnv #1569](https://github.com/openenv/OpenEnv/pull/1569) | FinQA's percentage fallback never stripped labels like `2023:`, so a correct labelled answer scored 0. |
 | [LiteLLM #44230](https://github.com/BerriAI/litellm/pull/44230) | Streams where the provider sent no usage were logged at 0 tokens and $0, so spend tracking undercounted that traffic. A regression from [#42323](https://github.com/BerriAI/litellm/pull/42323). |
 
-In review, 31 PRs across 23 projects:
+<!-- UPSTREAM:START -->
+Merged upstream: **4** across **2** projects. In review: **31** across **23** projects. Open ones are proposals until a maintainer merges them.
 
-| project | PRs |
-|:--|:--|
-| NVIDIA NeMo Gym | [#5733](https://github.com/NVIDIA-NeMo/Gym/pull/5733), [#5760](https://github.com/NVIDIA-NeMo/Gym/pull/5760), [#5761](https://github.com/NVIDIA-NeMo/Gym/pull/5761), [#5802](https://github.com/NVIDIA-NeMo/Gym/pull/5802), [#5803](https://github.com/NVIDIA-NeMo/Gym/pull/5803) |
-| Letta evals | [#357](https://github.com/letta-ai/letta-evals/pull/357), [#358](https://github.com/letta-ai/letta-evals/pull/358) |
-| OSWorld | [#686](https://github.com/xlang-ai/OSWorld/pull/686), [#687](https://github.com/xlang-ai/OSWorld/pull/687) |
-| Prime Intellect verifiers | [#3092](https://github.com/PrimeIntellect-ai/verifiers/pull/3092), [#3093](https://github.com/PrimeIntellect-ai/verifiers/pull/3093) |
-| rLLM | [#792](https://github.com/rllm-org/rllm/pull/792), [#950](https://github.com/rllm-org/rllm/pull/950) |
-| AllenAI open-instruct | [#2212](https://github.com/allenai/open-instruct/pull/2212) |
-| AutoResearchExam | [#24](https://github.com/bespokelabsai/AutoResearchExam/pull/24) |
-| Browser Use rl-env-use | [#9](https://github.com/browser-use/rl-env-use/pull/9) |
-| CRMArena | [#32](https://github.com/SalesforceAIResearch/CRMArena/pull/32) |
-| Gymnasium | [#1837](https://github.com/Farama-Foundation/Gymnasium/pull/1837) |
-| Harbor | [#4160](https://github.com/harbor-framework/harbor/pull/4160) |
-| ITA-Bench | [#2](https://github.com/SapienzaNLP/ita-bench/pull/2) |
-| judgeval | [#837](https://github.com/JudgmentLabs/judgeval/pull/837) |
-| karotte | [#141](https://github.com/preferencemodel/karotte/pull/141) |
-| LiteLLM | [#50442](https://github.com/BerriAI/litellm/pull/50442) |
-| LiveKit Agents | [#8420](https://github.com/livekit/agents/pull/8420) |
-| MemoryBench | [#102](https://github.com/supermemoryai/memorybench/pull/102) |
-| MLflow | [#27541](https://github.com/mlflow/mlflow/pull/27541) |
-| OpenEnv | [#1580](https://github.com/openenv/OpenEnv/pull/1580) |
-| Opik | [#9503](https://github.com/comet-ml/opik/pull/9503) |
-| speedrun_bench | [#11](https://github.com/patronus-ai/speedrun_bench/pull/11) |
-| Tinker Cookbook | [#994](https://github.com/thinking-machines-lab/tinker-cookbook/pull/994) |
-| YC-Bench | [#48](https://github.com/collinear-ai/yc-bench/pull/48) |
+<details>
+<summary>Every upstream pull request, merged and open</summary>
+
+#### Merged
+
+**openenv/OpenEnv**
+
+- [#1572](https://github.com/openenv/OpenEnv/pull/1572) fix(julia_env): match dangerous calls on a word boundary
+- [#1570](https://github.com/openenv/OpenEnv/pull/1570) fix(tbench2_env): treat a nan or inf reward.txt as no verdict
+- [#1569](https://github.com/openenv/OpenEnv/pull/1569) fix(finqa_env): strip the year label before the percentage points fallback
+
+**BerriAI/litellm**
+
+- [#44230](https://github.com/BerriAI/litellm/pull/44230) fix(streaming): restore the token estimate for streams that send no usage
+
+#### In review
+
+**NVIDIA-NeMo/Gym**
+
+- [#5803](https://github.com/NVIDIA-NeMo/Gym/pull/5803) fix(string_match): strip units only when no letter is attached
+- [#5802](https://github.com/NVIDIA-NeMo/Gym/pull/5802) fix(generative_reward_model): treat NaN or infinite scores as a parse failure
+- [#5761](https://github.com/NVIDIA-NeMo/Gym/pull/5761) fix(codex_agent): record the model's cmd for exec_command calls
+- [#5760](https://github.com/NVIDIA-NeMo/Gym/pull/5760) fix(trajectory): export cached input tokens from the live transcript
+- [#5733](https://github.com/NVIDIA-NeMo/Gym/pull/5733) feat(harbor): let a dataset name the reward.json key that is the score
+
+**letta-ai/letta-evals**
+
+- [#358](https://github.com/letta-ai/letta-evals/pull/358) fix(visualization): Count errors across all runs in the overall summary
+- [#357](https://github.com/letta-ai/letta-evals/pull/357) fix(extractors): Make pattern group mean the same thing with search_all
+
+**PrimeIntellect-ai/verifiers**
+
+- [#3093](https://github.com/PrimeIntellect-ai/verifiers/pull/3093) docs: describe the artifact trust boundary and saved artifacts
+- [#3092](https://github.com/PrimeIntellect-ai/verifiers/pull/3092) fix(judges): size prompt fences so a response can't close its block
+
+**rllm-org/rllm**
+
+- [#950](https://github.com/rllm-org/rllm/pull/950) fix(eval): do not read the next word as the MCQ answer letter
+- [#792](https://github.com/rllm-org/rllm/pull/792) fix(sandbox): skip dockerfile RUN replay for prebuilt task images
+
+**xlang-ai/OSWorld**
+
+- [#687](https://github.com/xlang-ai/OSWorld/pull/687) fix(calc): read single absolute cells in conditional formatting formulas
+- [#686](https://github.com/xlang-ai/OSWorld/pull/686) fix(gimp): only crop to visible content in check_image_size when ignore_transparent is set
+
+**allenai/open-instruct**
+
+- [#2212](https://github.com/allenai/open-instruct/pull/2212) Fix ReSearchVerifierF1 format check for responses with one finish tag
+
+**BerriAI/litellm**
+
+- [#50442](https://github.com/BerriAI/litellm/pull/50442) fix(cost): price a non-streamed reply without usage from counted tokens
+
+**bespokelabsai/AutoResearchExam**
+
+- [#24](https://github.com/bespokelabsai/AutoResearchExam/pull/24) FastAdv: normalize logit scale in both directions
+
+**browser-use/rl-env-use**
+
+- [#9](https://github.com/browser-use/rl-env-use/pull/9) grounded: count only the source's own repo on shared hosts, and skip pages that echo the answer from their URL
+
+**collinear-ai/yc-bench**
+
+- [#48](https://github.com/collinear-ai/yc-bench/pull/48) fix: start each episode with a fresh conversation in multi-episode runs
+
+**comet-ml/opik**
+
+- [#9503](https://github.com/comet-ml/opik/pull/9503) [issue-9502] [SDK] fix: keep an item's own id in evaluate_on_dict_items
+
+**Farama-Foundation/Gymnasium**
+
+- [#1837](https://github.com/Farama-Foundation/Gymnasium/pull/1837) Fix `generate_random_map` hanging for `size=1` or `p=0`
+
+**harbor-framework/harbor**
+
+- [#4160](https://github.com/harbor-framework/harbor/pull/4160) fix(rewardkit): score unreadable CSV and xlsx files instead of aborting
+
+**JudgmentLabs/judgeval**
+
+- [#837](https://github.com/JudgmentLabs/judgeval/pull/837) fix(evaluation): page through run results and match them to examples by id
+
+**livekit/agents**
+
+- [#8420](https://github.com/livekit/agents/pull/8420) fix(evals): count errored judges as not passed in JudgeGroup
+
+**mlflow/mlflow**
+
+- [#27541](https://github.com/mlflow/mlflow/pull/27541) Fix RAGAS `ToolCallAccuracy` and `ToolCallF1` ignoring tool calls with no arguments
+
+**openenv/OpenEnv**
+
+- [#1580](https://github.com/openenv/OpenEnv/pull/1580) Run coding_tools_env verification outside the notebook kernel
+
+**patronus-ai/speedrun_bench**
+
+- [#11](https://github.com/patronus-ai/speedrun_bench/pull/11) Prefix the agent's output in the orchestrator log
+
+**preferencemodel/karotte**
+
+- [#141](https://github.com/preferencemodel/karotte/pull/141) Add final_answer_pattern so RegexJudge examples don't pass a list of guesses
+
+**SalesforceAIResearch/CRMArena**
+
+- [#32](https://github.com/SalesforceAIResearch/CRMArena/pull/32) fix(evaluator): import re for the judge reply fallback parser
+
+**SapienzaNLP/ita-bench**
+
+- [#2](https://github.com/SapienzaNLP/ita-bench/pull/2) fix(truthful_qa): score mc1 against the index of the true answer
+
+**supermemoryai/memorybench**
+
+- [#102](https://github.com/supermemoryai/memorybench/pull/102) fix(zep): judge Zep with the same prompts as every other provider
+
+**thinking-machines-lab/tinker-cookbook**
+
+- [#994](https://github.com/thinking-machines-lab/tinker-cookbook/pull/994) fix(eval): shuffle GPQA choices so the answer is not always A
+
+<sub>Updated daily from the GitHub search API by <code>scripts/upstream.py</code>.</sub>
+
+</details>
+<!-- UPSTREAM:END -->
 
 **What I ship with**
 
