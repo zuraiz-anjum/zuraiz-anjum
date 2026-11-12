@@ -176,6 +176,6 @@ Python, TypeScript, Docker, PyTorch, LangGraph, FastAPI, PostgreSQL, Spark, GitH
 
 <br>
 
-[portfolio](https://zuraiz-portfolio.vercel.app) · zuraizwork@gmail.com
+zuraizwork@gmail.com
 
 <sub>If you're building environments or evals and need someone to break the grader before the model does, I'd like to hear about it.</sub>
