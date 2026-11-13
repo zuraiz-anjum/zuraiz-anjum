@@ -46,7 +46,7 @@ Most of these are graders or eval harnesses scoring something wrong, quietly. Me
 | [LiteLLM #44230](https://github.com/BerriAI/litellm/pull/44230) | Streams where the provider sent no usage were logged at 0 tokens and $0, so spend tracking undercounted that traffic. A regression from [#42323](https://github.com/BerriAI/litellm/pull/42323). |
 
 <!-- UPSTREAM:START -->
-Merged upstream: **4** across **2** projects. In review: **31** across **23** projects. Open ones are proposals until a maintainer merges them.
+Merged upstream: **5** across **2** projects. In review: **30** across **22** projects. Open ones are proposals until a maintainer merges them.
 
 <details>
 <summary>Every upstream pull request, merged and open</summary>
@@ -55,6 +55,7 @@ Merged upstream: **4** across **2** projects. In review: **31** across **23** pr
 
 **openenv/OpenEnv**
 
+- [#1580](https://github.com/openenv/OpenEnv/pull/1580) Run coding_tools_env verification outside the notebook kernel
 - [#1572](https://github.com/openenv/OpenEnv/pull/1572) fix(julia_env): match dangerous calls on a word boundary
 - [#1570](https://github.com/openenv/OpenEnv/pull/1570) fix(tbench2_env): treat a nan or inf reward.txt as no verdict
 - [#1569](https://github.com/openenv/OpenEnv/pull/1569) fix(finqa_env): strip the year label before the percentage points fallback
@@ -136,10 +137,6 @@ Merged upstream: **4** across **2** projects. In review: **31** across **23** pr
 **mlflow/mlflow**
 
 - [#27541](https://github.com/mlflow/mlflow/pull/27541) Fix RAGAS `ToolCallAccuracy` and `ToolCallF1` ignoring tool calls with no arguments
-
-**openenv/OpenEnv**
-
-- [#1580](https://github.com/openenv/OpenEnv/pull/1580) Run coding_tools_env verification outside the notebook kernel
 
 **patronus-ai/speedrun_bench**
 
