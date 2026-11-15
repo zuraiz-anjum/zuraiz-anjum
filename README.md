@@ -144,7 +144,7 @@ Merged upstream: **5** across **2** projects. In review: **30** across **22** pr
 
 **preferencemodel/karotte**
 
-- [#141](https://github.com/preferencemodel/karotte/pull/141) Add final_answer_pattern so RegexJudge examples don't pass a list of guesses
+- [#141](https://github.com/preferencemodel/karotte/pull/141) Anchor the RegexJudge examples to the end of the reply
 
 **SalesforceAIResearch/CRMArena**
 
