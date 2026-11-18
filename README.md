@@ -46,7 +46,7 @@ Most of these are graders or eval harnesses scoring something wrong, quietly. Me
 | [LiteLLM #44230](https://github.com/BerriAI/litellm/pull/44230) | Streams where the provider sent no usage were logged at 0 tokens and $0, so spend tracking undercounted that traffic. A regression from [#42323](https://github.com/BerriAI/litellm/pull/42323). |
 
 <!-- UPSTREAM:START -->
-Merged upstream: **5** across **2** projects. In review: **30** across **22** projects. Open ones are proposals until a maintainer merges them.
+Merged upstream: **5** across **2** projects. In review: **29** across **21** projects. Open ones are proposals until a maintainer merges them.
 
 <details>
 <summary>Every upstream pull request, merged and open</summary>
@@ -137,10 +137,6 @@ Merged upstream: **5** across **2** projects. In review: **30** across **22** pr
 **mlflow/mlflow**
 
 - [#27541](https://github.com/mlflow/mlflow/pull/27541) Fix RAGAS `ToolCallAccuracy` and `ToolCallF1` ignoring tool calls with no arguments
-
-**patronus-ai/speedrun_bench**
-
-- [#11](https://github.com/patronus-ai/speedrun_bench/pull/11) Prefix the agent's output in the orchestrator log
 
 **preferencemodel/karotte**
 
