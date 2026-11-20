@@ -46,7 +46,7 @@ Most of these are graders or eval harnesses scoring something wrong, quietly. Me
 | [LiteLLM #44230](https://github.com/BerriAI/litellm/pull/44230) | Streams where the provider sent no usage were logged at 0 tokens and $0, so spend tracking undercounted that traffic. A regression from [#42323](https://github.com/BerriAI/litellm/pull/42323). |
 
 <!-- UPSTREAM:START -->
-Merged upstream: **5** across **2** projects. In review: **29** across **21** projects. Open ones are proposals until a maintainer merges them.
+Merged upstream: **6** across **3** projects. In review: **28** across **20** projects. Open ones are proposals until a maintainer merges them.
 
 <details>
 <summary>Every upstream pull request, merged and open</summary>
@@ -63,6 +63,10 @@ Merged upstream: **5** across **2** projects. In review: **29** across **21** pr
 **BerriAI/litellm**
 
 - [#44230](https://github.com/BerriAI/litellm/pull/44230) fix(streaming): restore the token estimate for streams that send no usage
+
+**preferencemodel/karotte**
+
+- [#141](https://github.com/preferencemodel/karotte/pull/141) Anchor the RegexJudge examples to the end of the reply
 
 #### In review
 
@@ -137,10 +141,6 @@ Merged upstream: **5** across **2** projects. In review: **29** across **21** pr
 **mlflow/mlflow**
 
 - [#27541](https://github.com/mlflow/mlflow/pull/27541) Fix RAGAS `ToolCallAccuracy` and `ToolCallF1` ignoring tool calls with no arguments
-
-**preferencemodel/karotte**
-
-- [#141](https://github.com/preferencemodel/karotte/pull/141) Anchor the RegexJudge examples to the end of the reply
 
 **SalesforceAIResearch/CRMArena**
 
