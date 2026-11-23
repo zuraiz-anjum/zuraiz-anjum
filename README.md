@@ -46,7 +46,7 @@ Most of these are graders or eval harnesses scoring something wrong, quietly. Me
 | [LiteLLM #44230](https://github.com/BerriAI/litellm/pull/44230) | Streams where the provider sent no usage were logged at 0 tokens and $0, so spend tracking undercounted that traffic. A regression from [#42323](https://github.com/BerriAI/litellm/pull/42323). |
 
 <!-- UPSTREAM:START -->
-Merged upstream: **6** across **3** projects. In review: **28** across **20** projects. Open ones are proposals until a maintainer merges them.
+Merged upstream: **7** across **4** projects. In review: **27** across **19** projects. Open ones are proposals until a maintainer merges them.
 
 <details>
 <summary>Every upstream pull request, merged and open</summary>
@@ -63,6 +63,10 @@ Merged upstream: **6** across **3** projects. In review: **28** across **20** pr
 **BerriAI/litellm**
 
 - [#44230](https://github.com/BerriAI/litellm/pull/44230) fix(streaming): restore the token estimate for streams that send no usage
+
+**comet-ml/opik**
+
+- [#9503](https://github.com/comet-ml/opik/pull/9503) [issue-9502] [SDK] fix: keep an item's own id in evaluate_on_dict_items
 
 **preferencemodel/karotte**
 
@@ -117,10 +121,6 @@ Merged upstream: **6** across **3** projects. In review: **28** across **20** pr
 **collinear-ai/yc-bench**
 
 - [#48](https://github.com/collinear-ai/yc-bench/pull/48) fix: start each episode with a fresh conversation in multi-episode runs
-
-**comet-ml/opik**
-
-- [#9503](https://github.com/comet-ml/opik/pull/9503) [issue-9502] [SDK] fix: keep an item's own id in evaluate_on_dict_items
 
 **Farama-Foundation/Gymnasium**
 
